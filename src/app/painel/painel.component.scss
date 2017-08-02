@@ -1,0 +1,25 @@
+    img {
+        border: 3px solid #1a1a1a;
+        width: 300px;
+        height: 200px
+    }
+
+    textarea {
+        background: rgba(89, 89, 89, 0.5);
+        border: 1px solid #1a1a1a;
+        &:hover,
+        &:active,
+        &:focus {
+            background: rgba(89, 89, 89, 0.8);
+            border: 1px solid #1a1a1a;
+            color: #d9d9d9;
+        }
+    }
+
+    .alert {
+        color: #140606;
+        font-weight: bold;
+        border: 1px solid #270c0c;
+        background: rgba(59, 18, 18, 0.2);
+        padding-bottom: 0
+    }

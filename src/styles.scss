@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url('./assets/personagens/game-of-thrones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+}
+
+.btn {
+    cursor: pointer;
+    background: #3b1212;
+    color: #e6e6e6;
+    font-family: 'Raleway', sans-serif;
+    &:hover {
+        background: #270c0c
+    }
+}
+
+.mg-top-30 {
+    margin-top: 30px;
+}
