@@ -1,11 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Crushed');
 @import url('https://fonts.googleapis.com/css?family=Baumans');
-
 body {
-font-family: 'Baumans', cursive;
+    font-family: 'Baumans', cursive;
     background: url('./assets/personagens/game-of-thrones.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +11,7 @@ font-family: 'Baumans', cursive;
 .jumbotron {
     padding-top: 30px;
     padding-bottom: 30px;
-    background: rgba(51, 51, 51, 0.8);
+    background: rgba(26, 26, 26, 0.6);
     color: #fff;
 }
 
@@ -22,8 +19,11 @@ font-family: 'Baumans', cursive;
     cursor: pointer;
     background: #3b1212;
     color: #e6e6e6;
-    font-family: 'Raleway', sans-serif;
-    &:hover {
+    font-family: 'Baumans', cursive;
+    &:hover,
+    &:active,
+    &:focus {
+        border: 0.5px solid gray;
         background: #270c0c
     }
 }

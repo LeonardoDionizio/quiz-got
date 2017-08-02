@@ -7,6 +7,7 @@ import { PainelComponent } from './painel/painel.component';
 import { TentativasComponent } from './tentativas/tentativas.component';
 import { ProgressoComponent } from './progresso/progresso.component';
 import { CamelCasePipe } from './shared/camel-case.pipe';
+import { DicasComponent } from './dicas/dicas.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CamelCasePipe } from './shared/camel-case.pipe';
     PainelComponent,
     TentativasComponent,
     ProgressoComponent,
-    CamelCasePipe
+    CamelCasePipe,
+    DicasComponent
   ],
   imports: [
     BrowserModule

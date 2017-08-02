@@ -1,6 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, OnDestroy, PipeTransform } from '@angular/core';
-import { Frase } from './../shared/frase.model';
-import { FRASES } from './frases-mock';
+
 
 import { Personagem } from './../shared/personagem.model';
 import { PERSONAGENS } from './personagem-mock';
@@ -11,7 +10,6 @@ import { PERSONAGENS } from './personagem-mock';
   styleUrls: ['./painel.component.scss']
 })
 export class PainelComponent implements OnInit, OnDestroy {
-  public frases: Frase[] = FRASES;
   public personagens: Personagem[] = PERSONAGENS;
 
   public instrucao = 'Quem é este personagem:';
@@ -20,7 +18,8 @@ export class PainelComponent implements OnInit, OnDestroy {
 
   public rodada = 0;
   public rodadaPersonagem: Personagem;
-  public rodadaFrase: Frase;
+
+  public dicaPersonagem: string;
 
   public progresso = 0;
 
@@ -72,7 +71,7 @@ export class PainelComponent implements OnInit, OnDestroy {
   public atualizaRodada(): void {
     // define a frase a ser traduzida
     this.rodadaPersonagem = this.personagens[this.rodada];
-
+    this.dicaPersonagem = this.rodadaPersonagem.dicaPersonagem;
     // limpar resposta
     this.resposta = '';
   }

@@ -1,7 +1,12 @@
 <div class="container">
   <div class="jumbotron mg-top-30">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-6">
+        <div class="d-flex justify-content-start">
+          <app-dicas [dicaPersonagem]="dicaPersonagem"></app-dicas>
+        </div>
+      </div>
+      <div class="col-sm-6">
         <div class="d-flex justify-content-end">
           <app-tentativas [tentativas]="tentativas"></app-tentativas>
         </div>
@@ -10,7 +15,7 @@
     <div class="row mg-top-30">
       <div class="col">
         <div class="d-flex justify-content-center">
-          <img [src]="rodadaPersonagem.urlFotoPersonagem" alt="" style="width: 300px; height: 200px">
+          <img [src]="rodadaPersonagem.urlFotoPersonagem">
         </div>
       </div>
     </div>
@@ -20,7 +25,7 @@
           <h6><strong>{{ instrucao }}</strong></h6>
         </div>
         <div class="form-group d-flex justify-content-center">
-          <textarea class="form-control" rows="2" (input)="atualizaResposta($event)" [value]="resposta"></textarea>
+          <textarea class="form-control" rows="2" (input)="atualizaResposta($event)" (keyup.enter)="verificarResposta()" [value]="resposta"></textarea>
         </div>
       </div>
     </div>
