@@ -29,15 +29,19 @@
 
     <ng-template #fimDeJogo>
         <div *ngIf="tipoEncerramento === 'derrota'; else fimDeJogoVitoria" class="container" style="margin-top: 30px">
-            <div class="row">
-                <div class="col d-flex justify-content-center" style="color: #ff0000">
-                    <h3>Fim de jogo, infelizmente você perdeu!</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div style="margin-top: 40px;">
-                        <button class="btn" (click)="reiniciarJogo()">Jogar Novamente</button>
+            <div class="container">
+                <div class="jumbotron mg-top-30">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <h3>Fim de jogo, infelizmente você perdeu!</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div style="margin-top: 40px;">
+                                <button class="btn" (click)="reiniciarJogo()">Jogar Novamente</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,16 +49,24 @@
     </ng-template>
 
     <ng-template #fimDeJogoVitoria>
-        <div class="container" style="margin-top: 30px">
-            <div class="row">
-                <div class="col d-flex justify-content-center" style="color: #00b300">
-                    <h3>Parabéns! Você venceu!!!</h3>
+        <div class="container">
+            <div class="jumbotron mg-top-30">
+                <!-- <div class="container" style="margin-top: 30px"> -->
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h2>Parabéns! Você venceu!!!</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div style="margin-top: 40px;">
-                        <button class="btn" (click)="reiniciarJogo()">Jogar Novamente</button>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <h5>Realmente você sabe tudo sobre Game of Thrones</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <div style="margin-top: 40px;">
+                            <button class="btn" (click)="reiniciarJogo()">Jogar Novamente</button>
+                        </div>
                     </div>
                 </div>
             </div>

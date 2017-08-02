@@ -6,7 +6,9 @@
 
     textarea {
         background: rgba(89, 89, 89, 0.5);
+        color: #d9d9d9;
         border: 1px solid #1a1a1a;
+        width: 50%;
         &:hover,
         &:active,
         &:focus {
@@ -14,10 +16,13 @@
             border: 1px solid #1a1a1a;
             color: #d9d9d9;
         }
+        @media only screen and (max-width: 480px) {
+            width: 100%;
+        }
     }
 
     .alert {
-        color: #140606;
+        color: gray;
         font-weight: bold;
         border: 1px solid #270c0c;
         background: rgba(59, 18, 18, 0.2);

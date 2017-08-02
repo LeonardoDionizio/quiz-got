@@ -19,20 +19,22 @@
         <div class="d-flex justify-content-center">
           <h6><strong>{{ instrucao }}</strong></h6>
         </div>
-        <div class="form-group">
+        <div class="form-group d-flex justify-content-center">
           <textarea class="form-control" rows="2" (input)="atualizaResposta($event)" [value]="resposta"></textarea>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-8">
+    <div class="row d-flex justify-content-center">
+      <div class="col-6">
         <div *ngIf="msg" class="alert alert-danger">
           <p>{{msg}}</p>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="d-flex justify-content-end">
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
           <button class="btn" (click)="verificarResposta()">Próximo</button>
         </div>
       </div>
