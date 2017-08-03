@@ -12,7 +12,7 @@ import { PERSONAGENS } from './personagem-mock';
 export class PainelComponent implements OnInit, OnDestroy {
   public personagens: Personagem[] = PERSONAGENS;
 
-  public instrucao = 'Quem é este personagem:';
+  public instrucao = 'Quem sou eu?';
   public resposta = '';
   public msg: string;
 
