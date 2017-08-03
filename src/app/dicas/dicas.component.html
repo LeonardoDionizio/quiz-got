@@ -1,1 +1,11 @@
-<a tabindex="0" class="btn" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+<popover-content #dicaPopover title="Dica" placement="right" [animation]="true" [closeOnClickOutside]="true">
+    <div class="row">
+        <div class="col">
+            <h6>{{ dicaPersonagem }}</h6>
+        </div>
+    </div>
+</popover-content>
+
+<a [popover]="dicaPopover">
+    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+</a>

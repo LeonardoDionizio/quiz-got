@@ -8,6 +8,7 @@ import { TentativasComponent } from './tentativas/tentativas.component';
 import { ProgressoComponent } from './progresso/progresso.component';
 import { CamelCasePipe } from './shared/camel-case.pipe';
 import { DicasComponent } from './dicas/dicas.component';
+import { PopoverModule } from 'ng2-popover';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,8 @@ import { DicasComponent } from './dicas/dicas.component';
     CamelCasePipe,
     DicasComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, PopoverModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class DicasComponent implements OnInit {
   @Input() public dicaPersonagem: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
