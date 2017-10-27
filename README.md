@@ -1,28 +1,22 @@
-# QuizGot
+<div align="center">
+    <h1>Quiz Game of Thrones</h1>
+</div>
+<div align="center">
+  <img src="https://github.com/leodionizio/quiz-got/blob/master/src/assets/vida_cheio.png" alt="Quiz Got Icon" width="150">
+</div>
+<br>
+Um quiz desenvolvido para testar seu conhecimento sobre a série Game of Thrones, com perguntas sobre os personagens, mas você tem apenas 5 vidas =).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+ 
+### Repositórios:
+- **[Quiz Got](https://github.com/leodionizio/quiz-got)**
 
-## Development server
+#### Ferramentas Utilizadas
+- **[Angular](https://angular.io/)**
+- **[Sass](http://sass-lang.com/)**
+- **[S3 AWS Service](https://aws.amazon.com/pt/console/)**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Link de Acesso
+- **[Quiz Got](http://quiz-got.s3-website-sa-east-1.amazonaws.com/)**
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**Autor: [@leodionizio](https://github.com/leodionizio/)**
